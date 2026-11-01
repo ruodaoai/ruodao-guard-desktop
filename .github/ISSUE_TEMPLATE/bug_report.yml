@@ -1,0 +1,77 @@
+name: Bug 报告
+description: 报告一个可以复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。提交前请先搜索已有 Issue。
+        **安全漏洞请勿在此提交**，请按 [SECURITY.md](../blob/main/SECURITY.md) 的流程私下报告。
+        **请勿粘贴**真实姓名、含用户名的完整路径、API Key 或内网地址。
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述
+      description: 发生了什么？和你的预期有什么差别？
+      placeholder: 点击「一键清理」后提示成功，但磁盘可用空间没有变化。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 越具体越好，从打开应用开始写。
+      placeholder: |
+        1. 打开应用，进入「垃圾清理」
+        2. 等待扫描完成
+        3. 点击「一键清理」
+    validations:
+      required: true
+
+  - type: input
+    id: app-version
+    attributes:
+      label: 应用版本
+      description: 设置中心 → 应用信息
+      placeholder: "1.1.2"
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: 系统版本
+      placeholder: "Windows 11 家庭中文版 23H2 x64"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: admin
+    attributes:
+      label: 是否以管理员身份运行
+      options:
+        - 否（普通权限）
+        - 是（管理员）
+        - 不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或日志
+      description: 界面问题请务必附截图。日志请先脱敏。
+      placeholder: 把图片直接拖进来即可。
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 例如杀软是否拦截、是否刚升级过系统、其他相关现象。
+    validations:
+      required: false

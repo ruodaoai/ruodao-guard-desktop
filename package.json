@@ -1,0 +1,58 @@
+{
+  "name": "ruodao-guard",
+  "version": "1.1.2",
+  "description": "若道安全卫士 — 电脑体检、木马查杀、垃圾清理、软件管理、驱动管理、开机加速与 AI 安全助手",
+  "main": "./out/main/index.js",
+  "author": "Ruodao",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruodaoai/ruodao-guard-desktop.git"
+  },
+  "homepage": "https://github.com/ruodaoai/ruodao-guard-desktop#readme",
+  "bugs": {
+    "url": "https://github.com/ruodaoai/ruodao-guard-desktop/issues"
+  },
+  "keywords": [
+    "electron",
+    "windows",
+    "security",
+    "antivirus",
+    "system-optimizer",
+    "junk-cleanup",
+    "driver-manager",
+    "react",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "electron-vite dev",
+    "start": "electron-vite preview",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web",
+    "build": "npm run typecheck && electron-vite build",
+    "smoke": "tsx scripts/smoke.ts",
+    "e2e": "node scripts/e2e.mjs",
+    "e2e:virus": "node scripts/e2e-virus.mjs",
+    "e2e:ai": "node scripts/e2e-ai.mjs",
+    "dist:win": "npm run build && electron-builder --win --config electron-builder.yml"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "45.1.0",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "lucide-react": "^1.65.0",
+    "playwright-core": "^1.64.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  }
+}

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安全漏洞 / Security vulnerability
+    url: https://github.com/ruodaoai/ruodao-guard-desktop/security/advisories/new
+    about: 请勿公开提交安全漏洞，使用私有漏洞报告。
+  - name: 若道官网 / Ruodao
+    url: https://ruodao.com
+    about: 产品相关问题可访问官网。

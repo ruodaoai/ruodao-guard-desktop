@@ -1,0 +1,27 @@
+# dependencies
+node_modules/
+
+# build output
+out/
+dist/
+release/
+release-*/
+*.tsbuildinfo
+
+# test artifacts (screenshots produced by e2e runs)
+test-artifacts/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local agent workspace
+.workbuddy/
+
+# logs & misc
+*.log
+npm-debug.log*
+*.zip

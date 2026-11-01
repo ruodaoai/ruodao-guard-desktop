@@ -1,0 +1,22 @@
+# Normalize line endings: keep LF in the repo, end users on Windows still get CRLF in their editor
+* text=auto eol=lf
+
+# Explicit text types
+*.ts   text
+*.tsx  text
+*.js   text
+*.mjs  text
+*.json text
+*.md   text
+*.yml  text
+*.yaml text
+*.css  text
+*.html text
+*.svg  text
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.ico  binary
+*.exe  binary
+*.zip  binary
